@@ -14,7 +14,7 @@ import cucumber.api.junit.*;
 
 
 @RunWith(Cucumber.class)
-public class JUnitTestRunner {
+public class TestRunner {
 	
 
 }
