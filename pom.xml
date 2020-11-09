@@ -142,7 +142,7 @@
            <testFailureIgnore>true</testFailureIgnore>
           
           <includes>
-          <include>**/*JunitTestRunner.java</include>
+          <include>**/*TestRunner.java</include>
           </includes>
         </configuration>
         </plugin>
