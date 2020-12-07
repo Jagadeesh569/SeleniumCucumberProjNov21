@@ -1,0 +1,26 @@
+pipeline{
+  agent any
+  stages {
+    stage('Git Pull'){
+    steps{
+    echo 'Git Pull stage ......'
+    } 
+    
+    }
+    
+     stage('selenium run'){
+    steps{
+    echo 'selenium run  ......'
+    } 
+    
+    }
+    
+  }
+  
+  post{
+  always{
+  echo 'Inside always'
+  }
+  }
+
+}
