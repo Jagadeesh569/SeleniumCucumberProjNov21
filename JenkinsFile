@@ -4,6 +4,7 @@ pipeline{
     stage('Git Pull'){
     steps{
     echo 'Git Pull stage ......'
+    git branch: 'main', credentialsId: 'Jagadeesh569', url: 'https://github.com/Jagadeesh569/SeleniumCucumberProjNov21.git'
     } 
     
     }
@@ -11,6 +12,7 @@ pipeline{
      stage('selenium run'){
     steps{
     echo 'selenium run  ......'
+    mvn clean test -Dcucumber.options="src/test/resources/Features --tags @Smoke"
     } 
     
     }
