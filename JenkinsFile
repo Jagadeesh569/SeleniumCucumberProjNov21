@@ -12,7 +12,7 @@ pipeline{
      stage('selenium run'){
     steps{
     echo 'selenium run  ......'
-    sh label: '', script: 'mvn clean test -Dcucumber.options="src/test/resources/Features --tags @Smoke"'
+    bat label: '', script: 'mvn clean test -Dcucumber.options="src/test/resources/Features --tags @Smoke"'
     } 
     
     }
